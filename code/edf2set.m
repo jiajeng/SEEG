@@ -32,6 +32,7 @@ function [errorlog,outlog] = edf2set(datapath,edfpath,varargin)
 
         end
     end
+
     edffile = dir(fullfile(datapath,edfpath,'**','*.edf'));
     % --------------------------get subject name
     % suggest all edffile path are same except subject name 
