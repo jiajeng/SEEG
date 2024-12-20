@@ -1,3 +1,21 @@
 ## 241220
-- 測試 :
-- 照舊的程序執行  --> `送input to刺激器(每次間隔2s)` --> ``
+- 測試1 : trigger in跟trigger out 都會好好的運作    
+`用eprime送value 5出去(pin2  1, pin4  4)`  
+`刺激器收到 pin2 的上升波 開始制動`  
+&ensp; - 刺激器 ：   
+&ensp; `發送刺激 等300ms 發送trigger out (pin4  4)`
+- 結果1 ： 用新線測試(trigger in pin2  trigger out pin4)   
+&ensp; `trigger in eeg 可以收到數值  trigger out 收不到`  `可能是資料腳還是在input所以無法？eprime那端擋掉的？`   
+- 結果2 : 新線是trigger in，用一個bnc pin 4接trigger out 
+`trigger in 可以看到 1或5看eprime設定多少(但1應該就行`  
+`trigger out 也可以看到 16，但in的值要歸0，不然會是in的值 `     
+ 
+
+- 測試2 : 刺激器的out送到eprime，eprime在輸出圖片之類的東西     
+`嘗試直接接pin12到trigger out送給eprime`-->`結果 : 沒有反應，在想是不是epime那邊的data什麼的?好像可以改平行埠要in還是out可能要改成out，再試試`  
+
+
+- 結果 ：   
+`trigger out 有時候會漏送，即便是沒有input的時候`  
+`應該是刺激器那邊的input有問題 --> 如果不使用input作為輸入的話，用點的送刺激出去的話，trigger就不會延誤了，點下去的瞬間會給電跟trigger`   
+`新線材沒問題，但不能同時當作trigger in 跟 out,感覺要設定資料型態是in 還是out`
