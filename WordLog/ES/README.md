@@ -1,6 +1,7 @@
 ## content
 [2024/12/20 -- 跟廠商測試](~241220)  
 [2024/12/23 -- idea](~241223)  
+[2024/12/25 -- test for two PCs send trigger](~241225)   
 
 ## 241220
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content)   
@@ -62,6 +63,16 @@ comunicate exp.PC and stim.PC using bluetooth
   - package 2 : pyautogui
   install(for anaconda virtual enviroment) : `conda install conda-forge::pyautogui`  
   &ensp;&ensp;&ensp;&ensp; (for base enviroment) : `pip install pyautogui`   
+
+ 
+- exp. PC [solve](https://discourse.psychopy.org/t/problem-with-psychopy-parallel/8857/5)  
+using psycopy `parallel.PrallelPort(address)` will output a nonetype variable means can't read data in parallel port. So follow this post to solve. download `InpOutx64.dll` copy to ./windows/System32 then it should be good to run.  
+
+- conclusion
+    - connect two pcs using bluetooth
+    - stim. PC is server to receive data
+    - exp. PC is client to send data to stim. pc
+    - exp. PC read parallel port data to get eprime event
 
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content) 
