@@ -38,13 +38,31 @@ if this is feasible then it should used for `electrode stimulation` --> `exprime
 > e.x. if input value is 5, then no set value to 0, output value will be 5 add output value
 
 - for input delay
-
+using exp.PC send trigger to sti.PC then control mouse to click stimulus buttom  
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content) 
 
 
-## 
+## 241225
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content)   
+comunicate exp.PC and stim.PC using bluetooth    
+- exp. PC client(send trigger)    
+  - package 1 : psycopy  
+  install(for anaconda virtual enviroment) : 1. `clone this git repo : https://github.com/psychopy/psychopy)`(use git clone or just download git just get psychopy folder)    
+  &ensp;&ensp;&ensp;&ensp; 2. open command and cd to psychopy dir `cd C:\Users\hp\Documents\Git_repo\psychopy`   
+  &ensp;&ensp;&ensp;&ensp; 3. enter `pip install -e .`
+  - package 2 : pybluez  
+  install : 1. `clone this git repo : https://github.com/pybluez/pybluez.git`  
+  &ensp;&ensp;&ensp;&ensp; 2. open your enviroment prompt or cmd cd to pybluez dir  
+  &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;`cd C:\Users\hp\Dowloads\pybluez-master`  
+  &ensp;&ensp;&ensp;&ensp; 3. enter `python setup.py install`  
+    
+- stim. PC Server
+  - package 1 : pybluez
+  - package 2 : pyautogui
+  install(for anaconda virtual enviroment) : `conda install conda-forge::pyautogui`  
+  &ensp;&ensp;&ensp;&ensp; (for base enviroment) : `pip install pyautogui`   
+
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content) 
 
