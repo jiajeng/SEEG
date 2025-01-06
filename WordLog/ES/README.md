@@ -4,7 +4,7 @@
 [2024/12/25 -- test for two PCs send trigger](#241225)   
 [2024/12/26 -- bluetooth not work](#241226)    
 [2024/12/27 -- ethernet cable is best but laptop no ethernet slot to insert](#241227)  
-[2025/01/06 -- try ethernet cable on EMG data collection --> latency 400/1000](#250106)   
+[2025/01/06 -- try ethernet cable on EMG data collection --> latency 0.3~0.4s](#250106)   
 
 ## 241220
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content)   
