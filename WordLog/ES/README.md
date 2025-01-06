@@ -103,13 +103,21 @@ but laptop has no ethernet slot. for now ethernet cable has best lantency.
 
 ## 250106
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content)   
-- e-prime send event from socket to ES laptop(python receivev socket event then using pyautogui click stimulus buttom)    
-- try stimulus interval 1000ms, 2500ms, 1500ms --> result : maximum latancy point are 300-400(around 0.3~0.4s)
+##### comunicate exp.PC and stim.PC using ethernet cable   
+- exp. PC(send trigger, client)
+  - E-prime device socket
+- stim. PC(receive trigger, Server)
+  - package socket(no need to install)
+  - check IP in this PC
 
-- but only using python to test send and receive event using socket latancy is 0.001s
-- maybe ....
-- e-prime send event has latancy(try using LPT to send event in e-prime, and using python to read LPT data then send event to ES laptop)
-- ES software has latency(using python or something IDL to send a TTL signal to trigger in, maybe is all e-primes latency??)
+- result
+  - e-prime send event from socket to ES laptop(python receive socket event then using pyautogui click stimulus buttom)    
+  - try stimulus interval 1000ms, 2500ms, 1500ms --> result : maximum latancy point are 300-400(around 0.3~0.4s)
+  
+  - but latancy is 0.001s when only using python to test send and receive event using socket 
+  - maybe ....
+  - e-prime send event has latancy(try using LPT to send event in e-prime, and using python to read LPT data then send event to ES laptop)(env ==> BTClient(psycopy))
+  - ES software has latency(using python or something IDL to send a TTL signal to trigger in, maybe is all e-primes latency??)
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content) 
 
