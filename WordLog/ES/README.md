@@ -3,7 +3,7 @@
 [2024/12/23 -- idea](#241223)  
 [2024/12/25 -- test for two PCs send trigger](#241225)   
 [2024/12/26 -- bluetooth not work](#241226)    
-[2024/12/27 -- ethernet cable is best but laptop no ethernet slot to insert](#241227)  
+[2024/12/27 -- ethernet cable is best but laptop no ethernet slot to insert, ES out(12) to Eprime then ...](#241227)  
 [2025/01/06 -- try ethernet cable on EMG data collection --> latency 0.3~0.4s](#250106)   
 
 ## 241220
@@ -95,7 +95,9 @@ for now use wifi find network socket for laptop
 
 - test for ethernet cable  
 - only send and receive latancy = 0.001s  
-but laptop has no ethernet slot. for now ethernet cable has best lantency.  
+but laptop has no ethernet slot. for now ethernet cable has best lantency.
+
+- test for ES trigger out(12) to e-prime then do some stimulus(2 or 4). can work.
 
 &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;[content](#content) 
 
