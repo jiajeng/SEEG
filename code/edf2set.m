@@ -29,52 +29,41 @@ function [errorlog,outlog] = edf2set(datapath,edfpath,varargin)
             case 'Pdataf'
                 Pf = true;
                 Pdataf = varvl{i};
-
+            case 'sess'
+                sess = varvl{i};
+            otherwise
+                error('do not recognize %s',nm)
         end
     end
 
     edffile = dir(fullfile(datapath,edfpath,'**','*.edf'));
-    % --------------------------get subject name
-    % suggest all edffile path are same except subject name 
-    % try 
-    %     folders = {edffile.folder};
-    %     folders = string(split(folders',filesep));
-    %     if size(folders,1) == 1
-    %         folders = folders';
-    %     end
-    %     f = false;
-    %     % check 1.
-    %     % if folder name contains 's' and number then suggest
-    %     % this folder is subject id
-    %     id = cell(length(edffile),1);
-    %     for i = 1:size(folders,1) % n file 
-    %         for j = 1:size(folders,2) % n subfolder
-    %             subfold = folders(i,j);
-    %             % check this subfolder has number index
-    %             numf = isstrprop(subfold,'digit');
-    %             % check this subfolder 's' index
-    %             sf = char(subfold) == 's';
-    %             if any(numf) || any(sf) 
-    %                 id{i} = subfold;
-    %             end
-    %         end
-    %     end
-    %     if all(~cellfun(@isempty ,id)), f = true;end
-    %     if ~f
-    %         logary = true(1,size(folders,2));
-    %         for i = 1:length(edffile)-1
-    %             logary = all([logary;folders(i,:)==folders(i+1,:)]);
-    %         end
-    %         if sum(~logary) == 1
-    %             f = true;
-    %             id = convertStringsToChars(folders(:,~logary));
-    %         end
-    %     end
-    % catch ME
-    %     errorlog = cat(1,errorlog,ME);
-    % end
+
+    % get info 
+    if exist("info.mat",'file')
+        load("info.mat");
+        infos = {info.(sess).sub};
+    else
+        info = struct();
+        if ~exist("sess",'var')
+            sess = input('input sess name : ');
+        end
+        info.(sess) = [];
+    end
+    
     outlog = cell(length(edffile),1);
     for nfile = 1:length(edffile)
+        % get subject name 
+        % condition --> contains 's', length = 4, num of digit is 3 "s023"
+        sfold = split(edffile(nfile).folder,filesep);
+        for i = 1:length(sfold)
+            sub = sfold{i};
+            if length(sub) ~= 4, continue; end
+            if ~contains(sub,'s'), continue; end 
+            if isstrprop(sub,'digit') ~= logical([0,1,1,1]), continue; end
+            f = 1;break;
+        end
+        if ~f, sub = ''; end
+
         % get .edf file data
         EEG = pop_biosig(fullfile(edffile(nfile).folder,edffile(nfile).name));
 
@@ -90,9 +79,31 @@ function [errorlog,outlog] = edf2set(datapath,edfpath,varargin)
                 outpath = edffile(nfile).folder;
             end
         end
+
         if ~exist(outpath,'dir'), mkdir(outpath); end
         pop_saveset(EEG,'filename',edffile(nfile).name,'filepath',char(outpath))
+
+        % store process info to info
+        % if exist old info 
+        if exist("infos",'var')
+            % get old sub name indx
+            idx = string(sub) == string(infos);
+            if any(idx)
+            info.(sess)(idx).local = edffile(nfile).folder;
+            info.(sess)(idx).setpath = char(outpath);
+            else
+                info.(sess)(end+1).sub = sub;
+                info.(sess)(end).local = edffile(nfile).folder;
+                info.(sess)(end).setpath = char(outpath);
+            end
+            infos = {info.(sess).sub};
+        else
+            info.(sess)(end+1).sub = sub;
+            info.(sess)(end).local = edffile(nfile).folder;
+            info.(sess)(end).setpath = char(outpath);
+            infos = {info.(sess).sub};
+        end
         outlog{nfile} = char(outpath);
     end
-
+    save("info.mat","info")
 end

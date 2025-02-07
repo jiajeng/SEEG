@@ -28,11 +28,11 @@ for i = 1:length(VARNM)
 end
 
 % create sub info file(.mat struct)
-if ~exist("subinfo.mat",'file')
+if ~exist("info.mat",'file')
     % every sub has a table contains folder 
-    subinfo = struct();
+    info = struct();
 else
-    load("subinfo.mat");
+    load("info.mat");
 end
 
 
@@ -55,22 +55,22 @@ for nsub = 1:length(subject)
             contxt(contxt=='\') = '/';
             mget(sftpServ,contxt,ftpServer.localfolder)
             % find subject name if repeat then replace in this block
-            if ~isempty(fieldnames(subinfo))
-                tmp = string({subinfo.(folders{ifd}).sub});
+            if ~isempty(fieldnames(info))
+                tmp = string({info.(folders{ifd}).sub});
             else
                 tmp = "";
             end
             
             if any(tmp==string(subject{nsub}))
-                subinfo.(folders{ifd})(tmp==subject{nsub}).sub = subject{nsub};
-                subinfo.(folders{ifd})(tmp==subject{nsub}).('nas') = fullfile(ftpServer.infolder,subject{nsub},folders{ifd});
-                subinfo.(folders{ifd})(tmp==subject{nsub}).('local') = fullfile(ftpServer.localfolder,subject{nsub},folders{ifd});
+                info.(folders{ifd})(tmp==subject{nsub}).sub = subject{nsub};
+                info.(folders{ifd})(tmp==subject{nsub}).('nas') = fullfile(ftpServer.infolder,subject{nsub},folders{ifd});
+                info.(folders{ifd})(tmp==subject{nsub}).('local') = fullfile(ftpServer.localfolder,subject{nsub},folders{ifd});
             else
-                if isempty(contains(fieldnames(subinfo),folders{ifd})), subinfo.(folders{ifd}) = []; end
-                if ~contains(fieldnames(subinfo),folders{ifd}), subinfo.(folders{ifd}) = []; end
-                subinfo.(folders{ifd})(end+1).sub = subject{nsub};
-                subinfo.(folders{ifd})(end).('nas') = fullfile(ftpServer.infolder,subject{nsub},folders{ifd});
-                subinfo.(folders{ifd})(end).('local') = fullfile(ftpServer.localfolder,subject{nsub},folders{ifd});
+                if isempty(contains(fieldnames(info),folders{ifd})), info.(folders{ifd}) = []; end
+                if ~contains(fieldnames(info),folders{ifd}), info.(folders{ifd}) = []; end
+                info.(folders{ifd})(end+1).sub = subject{nsub};
+                info.(folders{ifd})(end).('nas') = fullfile(ftpServer.infolder,subject{nsub},folders{ifd});
+                info.(folders{ifd})(end).('local') = fullfile(ftpServer.localfolder,subject{nsub},folders{ifd});
             end
         catch ME 
             if string(ME.message) == string(sprintf('File "%s/%s/." not found on server.',subject{nsub},folders{ifd}))
@@ -82,4 +82,4 @@ for nsub = 1:length(subject)
     end
 end
 close(sftpServ)
-save("subinfo.mat","subinfo");
+save("info.mat","info");
