@@ -23,4 +23,7 @@
   - check Stim. PC IP address that will show in command line if run Eth_Server.py file
   - ![image](https://github.com/user-attachments/assets/00d79718-c9ec-4f7e-9475-9d5de7725449)
   - add a socket device in eprime enter IP address
+  - ![image](https://github.com/user-attachments/assets/012dc2c5-f9ca-413d-ac7f-13cd38ac8bc6)
   - send ES trigger by socket device
+  - ![image](https://github.com/user-attachments/assets/83401159-a223-4a9b-bc75-a69baf40c05c)
+
