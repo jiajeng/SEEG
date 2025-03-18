@@ -27,7 +27,7 @@ after connect all cables
     
 
 ### step2 : use this PC IP to setup a server (automatically)
-- Host Server 
+- Host Server    
    ![image 2](https://github.com/user-attachments/assets/d27482fb-ae40-4d7f-9dbe-8afec4b1f9d8)
 
 ## Exp. PC
