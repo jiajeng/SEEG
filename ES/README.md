@@ -1,3 +1,17 @@
+## device connect
+#### host module  
+  ![image](https://github.com/user-attachments/assets/a9381689-0d91-460f-9a1f-2d534ca057c0)
+
+#### limb module  
+  ![image](https://github.com/user-attachments/assets/7b26b7f8-87a0-4349-bb43-0c9f22bd4e33)
+
+#### connect 
+- connect host and limb module, host module connect to stim. PC
+  ![image](https://github.com/user-attachments/assets/885de71c-54c1-4682-a539-aff8252b9265)
+- host module need power supply  
+- electrode plug in limb module  
+  ![image](https://github.com/user-attachments/assets/e5902e8e-35da-417a-afbd-54f39a423014)
+
 ## Ethernet connect two PCs
 ### device :
   
