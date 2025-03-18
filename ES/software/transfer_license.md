@@ -9,6 +9,8 @@
   - step 4.1 : open [cadwell license bot](https://cadwell.support/licensing-bot/)
   - step 4.2 : say hi
   - ![image](https://github.com/user-attachments/assets/0056d0b3-aadd-4538-8b2d-3a85ddca1fce)
+![image](https://github.com/user-attachments/assets/d956e247-fdca-462a-88cd-cbc67b8bf29a)
+![image](https://github.com/user-attachments/assets/f9a44d09-d19e-4811-9758-4ed92eae7a5e)
 
 ![image](https://github.com/user-attachments/assets/adea08e7-1cfa-4f0d-ae39-4e42f8de7091)
 
