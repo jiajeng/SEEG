@@ -1,4 +1,9 @@
 # Casade Surgical Studio
+### document
+- `120.126.102.101(Nas) /LabData/Cascade/Documents/`
+    
+- `paper document in Device suitcase`  
+   
 ## open case
 ### Add new
 - enter patient information
@@ -21,7 +26,3 @@
 ![image](https://github.com/user-attachments/assets/4f722a9c-d03a-4786-a12c-00d2acd45c96)
 
 
-### document
-- `120.126.102.101(Nas) /LabData/Cascade/Documents/`
-    
-- `In Device suitcase has paper document`  
