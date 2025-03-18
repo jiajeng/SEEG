@@ -15,7 +15,7 @@ after connect all cables
 
 ## Stim. PC
 
-- run this .pyfile, need pyautogui package in python enviroment
+- run [Eth_server.py](./code/Eth_server.py), need `pyautogui package` in python enviroment
 
 ### Step 1 : get click button position (if no button pisition .txt file)
 
