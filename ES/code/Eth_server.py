@@ -90,8 +90,4 @@ while True:
 # Close the connection
 conn.close()
 print("Connection closed")
-
-
-import pickle
-with open('eth_server.pkl','wb') as file:
-    pickle.dump(t,file)
+os._exit(00)
