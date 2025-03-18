@@ -1,10 +1,12 @@
 ## Ethernet connect two PCs
-- device :
-  - stim. PC
-  - exp. PC
-  - ES device
-  - Amplifier(EEG)
-- flow chart
+### device :
+  
+- stim. PC
+- exp. PC
+- ES device
+- Amplifier(EEG)
+   
+### flow chart
 ![image](https://github.com/user-attachments/assets/f0fdc0e4-d16f-47b4-a98f-391a94d3968c)
 
 # how to use
@@ -33,7 +35,7 @@ after connect all cables
 
 ## Exp. PC
 
-### step 1 : get stim.PC IP address and Port (define in the code, typically above 1024)
+### step 1 : get stim.PC IP address and Port (define in the code, typically lager than 1024)
 
 - check stim. pc ip address and Port that will shown in command line if run Eth_Server.py file
     
