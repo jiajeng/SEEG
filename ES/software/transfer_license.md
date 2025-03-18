@@ -7,7 +7,8 @@
 ![image](https://github.com/user-attachments/assets/a8387ac8-0e0c-47f3-978a-89c078a0ff71)
 ### step 3 : enter License ID  
 ![image](https://github.com/user-attachments/assets/932f816f-99c9-4da3-b3f3-9ff6df667de2)    
-<a name="userNumber"></a>![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)   
+### <a name="userNumber"></a>
+![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)   
 
 ### step 4 : get Activation Code   
   #### step 4.1 : open [cadwell license bot](https://cadwell.support/licensing-bot/)  
@@ -19,15 +20,14 @@
   #### step 4.5 : enter `license ID`
   #### step 4.6 : enter `User Code` [shown in this](#userNumber)  
   ![image](https://github.com/user-attachments/assets/e3f2ccfc-bc3c-4c39-9d53-4f3bf9725f47) 
-  #### step 4.7 : enter `PC Serial number` [find Serial number](#Serial_number)
+  #### step 4.7 : enter `PC Serial number`
+  #### type `wmic bios get serialnumber` in cmd 
+  ![image](https://github.com/user-attachments/assets/1bf94f4a-043b-4e59-b58f-6ac449fc5914)
   ![image](https://github.com/user-attachments/assets/782a05a9-1f98-448a-8d59-65b98348cae6)  
 
-### step 5 : enter Activation Code 
+###  step 5 : enter Activation Code 
 ![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)
 
-### <a name="Serial_number"></a>find Serial number
-#### type `wmic bios get serialnumber` in cmd 
-![image](https://github.com/user-attachments/assets/1bf94f4a-043b-4e59-b58f-6ac449fc5914)
 
 > [!Note]
 > #### This tutorial will transfer the license to new device.  
