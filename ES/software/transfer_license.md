@@ -25,7 +25,7 @@
   ![image](https://github.com/user-attachments/assets/1bf94f4a-043b-4e59-b58f-6ac449fc5914)  
   ![image](https://github.com/user-attachments/assets/782a05a9-1f98-448a-8d59-65b98348cae6)  
 
-###  step 5 : enter Activation Code DONE!!
+###  step 5 : enter Activation Code, DONE!!
 ![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)
 
 
