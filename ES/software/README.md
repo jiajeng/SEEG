@@ -21,8 +21,10 @@
 
 ## In case (for YMU_Estim Procedure)
 ### group
+- trigger in trigger out 
 ![image](https://github.com/user-attachments/assets/9962bca1-bd1b-48ad-a6e7-8beb6f4fa734)
 ### electrical stimulation
+- click manually  
 ![image](https://github.com/user-attachments/assets/4f722a9c-d03a-4786-a12c-00d2acd45c96)
 
 
