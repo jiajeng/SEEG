@@ -35,7 +35,7 @@ after connect all cables
 
 ## Exp. PC
 
-### step 1 : get stim.PC IP address and Port (define in the code, typically lager than 1024)
+### step 1 : get stim.PC IP address and Port (define in the code line 58, typically lager than 1024)
 
 - check stim. pc ip address and Port that will shown in command line if run Eth_Server.py file
     
@@ -52,5 +52,10 @@ after connect all cables
 ### step 3 : use socket to send trigger
 
 - send ES trigger by socket device
+
+> [!Note]
+> string : "in" --> tell host click button   
+> string : "exit" --> tell host close server    
+> can change in host server code(Eth_Server.py) line 85,87  
     
     ![image 5](https://github.com/user-attachments/assets/d3250e38-2df0-45af-95be-c6a868955d83)
