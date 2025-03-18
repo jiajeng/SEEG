@@ -20,7 +20,8 @@ after connect all cables
 ### Step 1 : get click button position (if no button pisition .txt file)
 
 - move cursur to stimulus button then do not move, use `alt+tab` or other shortcut method to command window then press enter
-    
+
+    ![image](https://github.com/user-attachments/assets/759406a8-7af6-40d8-abe3-bc00da58c2f9)
     ![image](https://github.com/user-attachments/assets/53c48264-fdf0-46c6-9f41-8165e6911557)
     
 - ask to save a.txt file to save position coordinate file (suggest enter y, for next time don’t need run this step again)
