@@ -6,10 +6,10 @@
 ![image](https://github.com/user-attachments/assets/daff6ae2-69f0-45a9-9758-ec8a9b05d844)
 ![image](https://github.com/user-attachments/assets/a8387ac8-0e0c-47f3-978a-89c078a0ff71)
 ### step 3 : enter License ID  
-![image](https://github.com/user-attachments/assets/932f816f-99c9-4da3-b3f3-9ff6df667de2)  
-<a name="userNumber"></a>![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)
+![image](https://github.com/user-attachments/assets/932f816f-99c9-4da3-b3f3-9ff6df667de2)    
+<a name="userNumber"></a>![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)   
 
-### step 4 : get Activation Code  
+### step 4 : get Activation Code   
   #### step 4.1 : open [cadwell license bot](https://cadwell.support/licensing-bot/)  
   #### step 4.2 : say `hi`
   #### step 4.3 : click `Transfer`
