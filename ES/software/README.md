@@ -1,12 +1,27 @@
 # Casade Surgical Studio
-
+## open case
 ### Add new
 - enter patient information
+  
 - select YMU_Estim Procedure
-- enter start case
-![image](https://github.com/user-attachments/assets/47c2f961-51f9-4f9a-aa5c-1a0cd6fc6145)
-![image](https://github.com/user-attachments/assets/07d59127-4627-4edd-85e9-5c82ead555a7)
-![image](https://github.com/user-attachments/assets/80b71c1a-a6d6-4d74-85a7-a7278ce29b98)
-![image](https://github.com/user-attachments/assets/0c64576a-d452-4581-865e-1c458b3c6c10)
-![image](https://github.com/user-attachments/assets/d74dabdb-82d4-490e-91b9-f60c3f2a969d)
-![image](https://github.com/user-attachments/assets/0f40d213-6a3e-4f9d-b1d8-6d1fd7432244)
+  
+- click start case
+![image](https://github.com/user-attachments/assets/444a2830-1395-4788-8277-6fa40d159ada)
+
+### Append old
+- select old case
+    
+- click Append 
+![image](https://github.com/user-attachments/assets/24584025-1e71-4c69-8f0f-63c9a448cbf5)
+
+## In case (for YMU_Estim Procedure)
+### group
+![image](https://github.com/user-attachments/assets/9962bca1-bd1b-48ad-a6e7-8beb6f4fa734)
+### electrical stimulation
+![image](https://github.com/user-attachments/assets/4f722a9c-d03a-4786-a12c-00d2acd45c96)
+
+
+### document
+- `120.126.102.101(Nas) /LabData/Cascade/Documents/`
+    
+- `In Device suitcase has paper document`  
