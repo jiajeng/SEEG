@@ -1,17 +1,34 @@
 # How to transfer license for cascade surgical studio
-- step 1 : install software to new pc [[this zip file]](./software.zip)
+### step 1 : install software to new pc   
+#### store in `120.126.102.101(nas) /LabData/Cascade/Cascade Surgical Studio  `
 ![image](https://github.com/user-attachments/assets/031d29a2-f49a-4cb3-93ce-a086ded393ca)
-- step 2 : open software and activate liscense by phone.  
+### step 2 : open software and activate liscense by phone.  
+![image](https://github.com/user-attachments/assets/daff6ae2-69f0-45a9-9758-ec8a9b05d844)
 ![image](https://github.com/user-attachments/assets/a8387ac8-0e0c-47f3-978a-89c078a0ff71)
-- step3 : enter License ID  
-![image](https://github.com/user-attachments/assets/b17446b3-6315-4c93-a2aa-aef38b9176df)
-- step 4 : get Activation Code  
-  - step 4.1 : open [cadwell license bot](https://cadwell.support/licensing-bot/)
-  - step 4.2 : say hi
-  - ![image](https://github.com/user-attachments/assets/0056d0b3-aadd-4538-8b2d-3a85ddca1fce)
-![image](https://github.com/user-attachments/assets/d956e247-fdca-462a-88cd-cbc67b8bf29a)
-![image](https://github.com/user-attachments/assets/f9a44d09-d19e-4811-9758-4ed92eae7a5e)
+### step 3 : enter License ID  
+![image](https://github.com/user-attachments/assets/932f816f-99c9-4da3-b3f3-9ff6df667de2)  
+<a name="userNumber"></a>![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)
 
-![image](https://github.com/user-attachments/assets/adea08e7-1cfa-4f0d-ae39-4e42f8de7091)
+### step 4 : get Activation Code  
+  #### step 4.1 : open [cadwell license bot](https://cadwell.support/licensing-bot/)  
+  #### step 4.2 : say `hi`
+  #### step 4.3 : click `Transfer`
+  ![image](https://github.com/user-attachments/assets/7d48ccd2-de33-4f7a-9c58-ce3ff9a89630)  
+  #### step 4.4 : click `Surgical Studio`
+  ![image](https://github.com/user-attachments/assets/60d2622c-3cff-4637-b739-7db2ef8b2883) 
+  #### step 4.5 : enter `license ID`
+  #### step 4.6 : enter `User Code` [shown in this](#userNumber)  
+  ![image](https://github.com/user-attachments/assets/e3f2ccfc-bc3c-4c39-9d53-4f3bf9725f47) 
+  #### step 4.7 : enter `PC Serial number` [find Serial number](#Serial_number)
+  ![image](https://github.com/user-attachments/assets/782a05a9-1f98-448a-8d59-65b98348cae6)  
 
+### step 5 : enter Activation Code 
+![image](https://github.com/user-attachments/assets/2a040165-387c-450a-bf86-67554f41b112)
 
+### <a name="Serial_number"></a>find Serial number
+#### type `wmic bios get serialnumber` in cmd 
+![image](https://github.com/user-attachments/assets/1bf94f4a-043b-4e59-b58f-6ac449fc5914)
+
+> [!Note]
+> #### This tutorial will transfer the license to new device.  
+> #### If want old device can use sugical studio software too, then keep this device offline.
