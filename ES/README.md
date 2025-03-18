@@ -52,10 +52,9 @@ after connect all cables
 ### step 3 : use socket to send trigger
 
 - send ES trigger by socket device
-
-> [!Note]
-> string : "in" --> tell host click button   
-> string : "exit" --> tell host close server    
-> can change in host server code(Eth_Server.py) line 85,87  
     
     ![image 5](https://github.com/user-attachments/assets/d3250e38-2df0-45af-95be-c6a868955d83)
+> [!Note]
+> string : "in" --> tell host click button `add in trigger out`   
+> string : "exit" --> tell host close server `add in last slice`    
+> can change in host server code(Eth_Server.py) line 85,87  
