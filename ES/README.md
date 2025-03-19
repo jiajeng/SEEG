@@ -4,8 +4,8 @@
     
 - `120.126.102.101(Nas) /LabData/Cascade/Documents/` -- older version
     
-## content 
-- [device connect](#deviceconnect)
+# content 
+- [device](#device)
     
 - [connect two PCs using Ethernet](#Eth)
   - [device](#devicerequire)
@@ -19,29 +19,37 @@
     - [Exp. PC](#exppc)
 
 
-## <a name="deviceconnect"></a> device
-#### host module  
-  ![image](https://github.com/user-attachments/assets/a9381689-0d91-460f-9a1f-2d534ca057c0)
+## device
+### base module  
+  ![image](https://github.com/user-attachments/assets/66fb2772-f642-4b06-81d3-0b5a7b651eec)
 
-#### limb module  
-  ![image](https://github.com/user-attachments/assets/7b26b7f8-87a0-4349-bb43-0c9f22bd4e33)
+### limb module  
+  ![image](https://github.com/user-attachments/assets/8e9ba2d6-25fa-47cd-ad8a-cb900f7c82cc)
 
-#### connect 
-- connect host and limb module, host module connect to stim. PC
-  ![image](https://github.com/user-attachments/assets/885de71c-54c1-4682-a539-aff8252b9265)
-- host module need power supply  
-- electrode plug in limb module  
-  ![image](https://github.com/user-attachments/assets/e5902e8e-35da-417a-afbd-54f39a423014)
+### software(Cascade Surgical Studio)
+[Quick Start Guide](./software/)
+  
+> [!Note]
+> 1. trigger-in has delay random time before stimulation  
+>    when using trigger-in to control stimulation and trigger-out, there has a delay random time before stimulation.
+> 2. trigger-out missing  
+>    about 20% trigger-out will be missing
 
-## <a name="Eth"></a> connect two PCs using Ethernet
+## <a name="Eth"></a> connect two PCs using Ethernet (for solve trigger-in delay)
+
+###### it seems to stimulate instantly when click stim. button so ...  
+*processs : using ethernet (most consistent delay time, has minimal variance) send trigger to stim. pc then using python (pyautogui package) control cursor to click stim. button*
+  
 ### <a name="devicerequire"></a> device :
   
 - stim. PC
 - exp. PC
 - ES device
 - Amplifier(EEG)
-   
-###  <a name="flowchart"></a>flow chart
+
+### connect wire 
+![image](https://github.com/user-attachments/assets/ef807721-cd7d-4031-bd07-6544158314be)
+### <a name="flowchart"></a>flow chart
 ![image](https://github.com/user-attachments/assets/f0fdc0e4-d16f-47b4-a98f-391a94d3968c)
 
 ## <a name="method"></a> how to use
@@ -54,7 +62,7 @@ after connect all cables
 
 ### Step 1 : get click button position (if no button pisition .txt file)
 
-- move cursur to stimulus button then do not move, use `alt+tab` or other shortcut method to command window then press enter
+- move cursur to sti. button then do not move, use `alt+tab` or other shortcut method to command window then press enter
 
     ![image](https://github.com/user-attachments/assets/ba39972f-9fb8-4548-9691-a34183060c0b)
     ![image](https://github.com/user-attachments/assets/53c48264-fdf0-46c6-9f41-8165e6911557)
@@ -91,6 +99,6 @@ after connect all cables
     
     ![image 5](https://github.com/user-attachments/assets/d3250e38-2df0-45af-95be-c6a868955d83)
 > [!Note]
-> string : "in" --> tell host click button `add in trigger out`   
+> string : "in" --> tell host click button `add in trigger-out`   
 > string : "exit" --> tell host close server `add in last slice`    
 > can change in host server code(Eth_Server.py) line 85,87  
