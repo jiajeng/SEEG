@@ -7,7 +7,7 @@
 # content 
 - [device](#device)
     
-- [connect two PCs using Ethernet](#Eth)
+- [connect two PCs using Ethernet](#ethernet)
   - [device](#devicerequire)
       
   - [flow chart](#flowchart)
@@ -40,7 +40,7 @@
 > 2. trigger-out missing when click button  
 >    about 20% trigger-out will be missing
 
-## <a name="Eth"></a>connect two PCs using Ethernet (for solve trigger-in delay)
+## <a name="ethernet"></a> connect two PCs using Ethernet (for solve trigger-in delay)
 
 ###### it seems to stimulate instantly when click stim. button so ...  
 *processs : using ethernet (most consistent latency, has minimal variance) send trigger to stim. pc then using python (pyautogui package) control cursor to click stim. button*
