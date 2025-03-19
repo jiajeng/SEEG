@@ -18,6 +18,11 @@
         
     - [Exp. PC](#exppc)
 
+- [cable connection for other method](#othmcw)
+    - [stimulate first then give stimulus item](#in)
+        
+    - [Ideally--TriggerIn and TriggerOut](#orig)
+        
 
 ## device
 ### base module  
@@ -30,15 +35,15 @@
 [Quick Start Guide](./software/)
   
 > [!Note]
-> 1. trigger-in has delay random time before stimulation  
->    when using trigger-in to control stimulation and trigger-out, there has a delay random time before stimulation.
-> 2. trigger-out missing  
+> 1. trigger-in has random delay before stimulation  
+>    when using trigger-in to control stimulation and trigger-out, there has a random delay before stimulation.
+> 2. trigger-out missing when click button  
 >    about 20% trigger-out will be missing
 
 ## <a name="Eth"></a> connect two PCs using Ethernet (for solve trigger-in delay)
 
 ###### it seems to stimulate instantly when click stim. button so ...  
-*processs : using ethernet (most consistent delay time, has minimal variance) send trigger to stim. pc then using python (pyautogui package) control cursor to click stim. button*
+*processs : using ethernet (most consistent latency, has minimal variance) send trigger to stim. pc then using python (pyautogui package) control cursor to click stim. button*
   
 ### <a name="devicerequire"></a> device :
   
@@ -47,8 +52,8 @@
 - ES device
 - Amplifier(EEG)
 
-### connect wire 
-![image](https://github.com/user-attachments/assets/ef807721-cd7d-4031-bd07-6544158314be)
+### cable connection
+![image](https://github.com/user-attachments/assets/bf212b03-ded7-47e4-a5b3-e0307fba5db2)
 ### <a name="flowchart"></a>flow chart
 ![image](https://github.com/user-attachments/assets/f0fdc0e4-d16f-47b4-a98f-391a94d3968c)
 
@@ -101,4 +106,31 @@ after connect all cables
 > [!Note]
 > string : "in" --> tell host click button `add in trigger-out`   
 > string : "exit" --> tell host close server `add in last slice`    
-> can change in host server code(Eth_Server.py) line 85,87  
+> can change in host server code(Eth_Server.py) line 85,87
+
+
+# <a name="othmcw"></a> Other method how to connect cable
+## <a name="in"></a> stimulate first then give stimulus item
+###### because the trigger-in random delay so stimulate first then give stimulus item will discard the random delay ... 
+*Exp. process :*   
+*1. start to send a trigger to stimulator*  
+*2. Wait for trigger out*  
+*3. give stimulus item*  
+*4. send trigger to stimulator and Amp.*  
+*loop 2.-4. to the end ...*
+
+### cable connection
+![image](https://github.com/user-attachments/assets/a9e52d04-c9e1-44b2-8e90-637928df0c31)
+
+
+## <a name="orig"></a> using Trigger in to control stimulus
+###### ideally ...
+
+*Process : send trigger to stimulator then do the electrical stimulation and send a trigger-out ...*
+
+### cable connection
+![image](https://github.com/user-attachments/assets/95e48a72-b5de-4de9-a460-68ed0f57f69c)
+
+> [!Note]
+> if `trigger-in delay` solved 
+
