@@ -34,7 +34,7 @@ if nofile:
     print('1 ...')
     time.sleep(1)
     x,y = pyautogui.position()
-    f = input('save position in a .txt file?(y)')
+    f = input('save position in a .txt file?(y/~)')
     if f=="y":
         with open('stimButtom_pos.txt','w') as file:
             file.write(str(x)+'\n')
