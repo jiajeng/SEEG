@@ -1,8 +1,8 @@
 # Casade Surgical Studio
 ### document
-- `120.126.102.101(Nas) /LabData/Cascade/Documents/`
+- `paper document in device suitcase` --  newer version --> suggest read this
     
-- `paper document in Device suitcase`  
+- `120.126.102.101(Nas) /LabData/Cascade/Documents/` -- older version
    
 ## open case
 ### Add new
