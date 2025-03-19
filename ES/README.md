@@ -33,7 +33,7 @@
 - electrode plug in limb module  
   ![image](https://github.com/user-attachments/assets/e5902e8e-35da-417a-afbd-54f39a423014)
 
-## <a name="Eth"></a>connect two PCs using Ethernet
+## <a name="Eth"></a> connect two PCs using Ethernet
 ### <a name="devicerequire"></a> device :
   
 - stim. PC
