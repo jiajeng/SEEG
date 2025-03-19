@@ -58,9 +58,6 @@
 ![image](https://github.com/user-attachments/assets/f0fdc0e4-d16f-47b4-a98f-391a94d3968c)
 
 ## <a name="method"></a> how to use
-
-after connect all cables
-
 ## <a name="stimpc"></a>Stim. PC
 
 - run [Eth_server.py](./code/Eth_server.py), need `pyautogui package` in python enviroment
@@ -76,6 +73,8 @@ after connect all cables
     
     ![image 1](https://github.com/user-attachments/assets/0356f45b-1f30-465f-bd6a-60ba13e9ffd0)
     
+> [!Note]
+> when start run experiment, make sure `cascade surgical studio page at the top` and the `button position is not moved`
 
 ### step2 : use this PC IP to setup a server (automatically)
 - Host Server
