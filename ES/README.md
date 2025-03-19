@@ -1,4 +1,25 @@
-## device connect
+## document 
+
+- `paper document in device suitcase`
+    
+- `120.126.102.101(Nas) /LabData/Cascade/Documents/`
+    
+## content 
+- [device connect](#deviceconnect)
+    
+- [connect two PCs using Ethernet](#Eth)
+  - [device](#devicerequire)
+      
+  - [flow chart](#flowchart)
+      
+  - [how to use](#method)
+      
+    - [Stim. PC](#stimpc)
+        
+    - [Exp. PC](#exppc)
+
+
+## <<a name="deviceconnect">> device
 #### host module  
   ![image](https://github.com/user-attachments/assets/a9381689-0d91-460f-9a1f-2d534ca057c0)
 
@@ -12,22 +33,22 @@
 - electrode plug in limb module  
   ![image](https://github.com/user-attachments/assets/e5902e8e-35da-417a-afbd-54f39a423014)
 
-## Ethernet connect two PCs
-### device :
+## <<a name="Eth"></a>>connect two PCs using Ethernet
+### <<a name="devicerequire"></a>> device :
   
 - stim. PC
 - exp. PC
 - ES device
 - Amplifier(EEG)
    
-### flow chart
+###  <<a name="flowchart"></a>>flow chart
 ![image](https://github.com/user-attachments/assets/f0fdc0e4-d16f-47b4-a98f-391a94d3968c)
 
-# how to use
+## <<a name="method"></a>> how to use
 
 after connect all cables
 
-## Stim. PC
+## <<a name="stimpc"></a>>Stim. PC
 
 - run [Eth_server.py](./code/Eth_server.py), need `pyautogui package` in python enviroment
 
@@ -48,7 +69,7 @@ after connect all cables
     
    ![image 2](https://github.com/user-attachments/assets/d27482fb-ae40-4d7f-9dbe-8afec4b1f9d8)
 
-## Exp. PC
+## <<a name="exppc"></a>>Exp. PC
 
 ### step 1 : get stim.PC IP address and Port (define in the code line 58, typically lager than 1024)
 
