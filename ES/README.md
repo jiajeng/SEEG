@@ -32,7 +32,7 @@
   ![image](https://github.com/user-attachments/assets/8e9ba2d6-25fa-47cd-ad8a-cb900f7c82cc)
 
 ### software(Cascade Surgical Studio)
-[Quick Start Guide](./software/)
+[Quick Start Guide](./software/README.md)
   
 > [!Note]
 > 1. trigger-in has random delay before stimulation  
