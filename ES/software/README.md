@@ -4,6 +4,8 @@
     
 - `120.126.102.101(Nas) /LabData/Cascade/Documents/` -- older version
 
+### [How to transfer lisence](./transfer_license.md)
+
 ## Quick start
 ### open case 
 #### Add new
