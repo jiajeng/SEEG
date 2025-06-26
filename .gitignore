@@ -1,0 +1,4 @@
+*.asv
+conn_cerebellum_*
+*test*
+*.ps
