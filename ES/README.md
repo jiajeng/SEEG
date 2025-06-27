@@ -56,7 +56,7 @@
 ![image](https://github.com/user-attachments/assets/7cb1f368-7736-4e40-9c1a-1d487c14e6f7)
 
 ## <a name="method"></a> how to use
-![image](https://github.com/user-attachments/assets/9f337966-db9f-4711-871d-35a2cb4f52c5)
+![image](https://github.com/user-attachments/assets/d3064d39-82f5-45a6-ac98-9b5ef9ec2f41)
 
 ## <a name="stimpc"></a>Elec. PC (Host)
 ### enviroment  
