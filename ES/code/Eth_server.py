@@ -63,7 +63,7 @@ if 'stimButtom_pos.txt' in posfile:
     
 
 if nofile: 
-    print('move cursor to the stimulus buttom then press enter')
+    print('move mouse to the stimulus buttom then press enter')
     input('press enter to continue ...')
     print('3 ...')
     time.sleep(1)
