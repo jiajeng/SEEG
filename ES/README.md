@@ -53,7 +53,7 @@
 - Amplifier(EEG)
 
 ### <a name="cables"></a>cable connection
-![image](https://github.com/user-attachments/assets/e409176f-7b65-4e60-9888-4e57be91a71b)
+![image](https://github.com/user-attachments/assets/7cb1f368-7736-4e40-9c1a-1d487c14e6f7)
 
 ## <a name="method"></a> how to use
 ![image](https://github.com/user-attachments/assets/9f337966-db9f-4711-871d-35a2cb4f52c5)
