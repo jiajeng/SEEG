@@ -56,9 +56,9 @@
 ![image](https://github.com/user-attachments/assets/e409176f-7b65-4e60-9888-4e57be91a71b)
 
 ## <a name="method"></a> how to use
-![image](https://github.com/user-attachments/assets/88d11e69-7e0e-48f2-85df-3b0e0c5df868)
+![image](https://github.com/user-attachments/assets/9f337966-db9f-4711-871d-35a2cb4f52c5)
 
-## <a name="stimpc"></a>Stim. PC
+## <a name="stimpc"></a>Elec. PC (Host)
 ### enviroment  
 - python 3.10  
     - package : pyautogui
@@ -66,7 +66,6 @@
 > [!Note]
 > for MSI laptop, enviroment is set in anaconda.
 
-### set host(elec. PC)
 - open casade surgical studio
     - start a case
     - open Trigger OUT fold  
@@ -76,8 +75,8 @@
 - run Eth_server.py  
   ![image](https://github.com/user-attachments/assets/88f9e283-d14c-4a20-8a85-7b95bbf4976c)
 
-## <a name="exppc"></a>Exp. PC
-### client(e-prime)
+## <a name="exppc"></a>e-prime PC (Client)
+
 - run e-prime after host is ready. (Eth_server.py is running)
 - device : add socket  
   ![image](https://github.com/user-attachments/assets/fccb7a74-dbc5-4330-a32b-850ceda71a4b)
