@@ -14,22 +14,23 @@
 - select YMU_Estim Procedure
   
 - click start case
-![image](https://github.com/user-attachments/assets/444a2830-1395-4788-8277-6fa40d159ada)
+![image](https://github.com/user-attachments/assets/f37cf17e-9feb-437f-9a3c-6ebd7fe24e8e)
 
 #### Append old case
 - select one case
     
 - click Append 
-![image](https://github.com/user-attachments/assets/24584025-1e71-4c69-8f0f-63c9a448cbf5)
+![image](https://github.com/user-attachments/assets/ed123d7c-835d-47fe-b18d-4a9fd802cc54)
 
 ### In case (for YMU_Estim Procedure)
 #### group
 - trigger in trigger out 
-![image](https://github.com/user-attachments/assets/3e0b655f-15da-460d-92e3-021387b1e0e1)
+![image](https://github.com/user-attachments/assets/111e8c10-e880-4931-878d-69766835e459)
 
 #### electrical stimulation
 - click manually  
-![image](https://github.com/user-attachments/assets/b04a15a7-a052-440c-8230-a51d2615b4b8)
+![image](https://github.com/user-attachments/assets/a3abb56a-56b6-4511-b5a8-1086cfa947ab)
+
 
 
 
