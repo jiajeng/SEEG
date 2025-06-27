@@ -1,6 +1,6 @@
 # SEEG
 ## Datacheckfile
-- [檢查SEEG實驗的資料完整性](./Datacheckfile/README.md)
+- [檢查SEEG實驗的資料完整性](./DataCheckfile/README.md)
 
 ## ES 
 - [電刺激器使用以及連接](./ES/README.md)
