@@ -18,7 +18,7 @@
         
     - [Exp. PC](#exppc)
 
-- [cable connection for other method](./OtherMethod.md)
+- [cable connection for other method](#otmec)
     - [stimulate first then give stimulus item](./OtherMethod.md/#in)
         
     - [Ideally--TriggerIn and TriggerOut](./OtherMethod.md/#orig)
@@ -87,6 +87,6 @@
   ![image](https://github.com/user-attachments/assets/db659503-bd5b-4a7d-be02-aba972cdb3f9)
 
   
-## [cable connection for other method](./OtherMethod.md)   
+## <a name="otmec"></a> [cable connection for other method](./OtherMethod.md)   
 [stimulate first then give stimulus item](./OtherMethod.md/#in)        
 [Ideally--TriggerIn and TriggerOut](./OtherMethod.md/#orig)  
