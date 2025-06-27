@@ -21,7 +21,7 @@
 - [cable connection for other method](./OtherMethod.md)
     - [stimulate first then give stimulus item](./OtherMethod.md/#in)
         
-    - [Ideally--TriggerIn and TriggerOut](./OhterMethod.md/#orig)
+    - [Ideally--TriggerIn and TriggerOut](./OtherMethod.md/#orig)
         
 
 ## device
