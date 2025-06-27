@@ -72,11 +72,11 @@
 ![image](https://github.com/user-attachments/assets/40e3df22-62a5-4aca-9cab-6a3cc1294cc5)
 - open anaconda prompt(nevigate to Eth_server.py folder)  
   ![image](https://github.com/user-attachments/assets/44e00faa-8715-4a0a-8585-16aa347364cb)
-- run Eth_server.py  
+- run [Eth_server.py](./code/)
   ![image](https://github.com/user-attachments/assets/88f9e283-d14c-4a20-8a85-7b95bbf4976c)
 
 ## <a name="exppc"></a>e-prime PC (Client)
-
+- [template file (Ethtest.es3)](./code/)
 - run e-prime after host is ready. (Eth_server.py is running)
 - device : add socket  
   ![image](https://github.com/user-attachments/assets/fccb7a74-dbc5-4330-a32b-850ceda71a4b)
