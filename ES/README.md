@@ -70,20 +70,20 @@
     - start a case
     - open Trigger OUT fold  
 ![image](https://github.com/user-attachments/assets/40e3df22-62a5-4aca-9cab-6a3cc1294cc5)
-- open anaconda prompt(nevigate to Eth_server.py folder)  
-  ![image](https://github.com/user-attachments/assets/44e00faa-8715-4a0a-8585-16aa347364cb)
-- run [Eth_server.py](./code/)
+- open anaconda prompt(nevigate to Eth_server.py folder)    
+  ![image](https://github.com/user-attachments/assets/44e00faa-8715-4a0a-8585-16aa347364cb)  
+- run [Eth_server.py](./code/)    
   ![image](https://github.com/user-attachments/assets/88f9e283-d14c-4a20-8a85-7b95bbf4976c)
 
 ## <a name="exppc"></a>e-prime PC (Client)
 - [template file (Ethtest.es3)](./code/)
 - run e-prime after host is ready. (Eth_server.py is running)
-- device : add socket  
+- device : add socket   
   ![image](https://github.com/user-attachments/assets/fccb7a74-dbc5-4330-a32b-850ceda71a4b)
-  - read ip and port from anoconda prompt  
+  - read ip and port from anoconda prompt   
   ![image](https://github.com/user-attachments/assets/b173f718-af04-46ce-a195-f7876f84320b)
 
-- send trigger 
+- send trigger   
   ![image](https://github.com/user-attachments/assets/db659503-bd5b-4a7d-be02-aba972cdb3f9)
 
   
