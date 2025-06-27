@@ -80,6 +80,9 @@
 - run e-prime after host is ready. (Eth_server.py is running)
 - device : add socket  
   ![image](https://github.com/user-attachments/assets/fccb7a74-dbc5-4330-a32b-850ceda71a4b)
+  - read ip and port from anoconda prompt  
+  ![image](https://github.com/user-attachments/assets/b173f718-af04-46ce-a195-f7876f84320b)
+
 - send trigger 
   ![image](https://github.com/user-attachments/assets/db659503-bd5b-4a7d-be02-aba972cdb3f9)
 
