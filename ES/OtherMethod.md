@@ -9,7 +9,7 @@
 *loop 2.-4. to the end ...*
 
 ### cable connection
-![image](https://github.com/user-attachments/assets/6991b158-b623-418d-bdde-4945fb2e254c)
+![image](https://github.com/user-attachments/assets/c577dc42-49e0-411c-9c84-3f9ada185ecd)
 
 ## <a name="orig"></a> using Trigger in to control stimulus
 ###### ideally ...
@@ -17,7 +17,7 @@
 *Process : send trigger to stimulator then do the electrical stimulation and send a trigger-out ...*
 
 ### cable connection
-![image](https://github.com/user-attachments/assets/42b2af7b-92f8-4dce-93e2-e78de69e9a9e)
+![image](https://github.com/user-attachments/assets/8ebd6d39-cc4a-4fdb-96dd-88d23775f4c0)
 
 > [!Note]
 > if `trigger-in delay` solved 
