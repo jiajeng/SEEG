@@ -18,7 +18,7 @@
   #### step 4.4 : click `Surgical Studio`
   ![image](https://github.com/user-attachments/assets/64a02091-6cb1-4661-88cc-7fc260eed7d9)
   #### step 4.5 : enter `license ID`
-  #### step 4.6 : enter `User Code` [shown in this](#userNumber)  
+  #### step 4.6 : enter `User Code` [shown in step 3.5](#userNumber)  
   ![image](https://github.com/user-attachments/assets/38d92b87-fc6b-4eae-9c33-a9f2d295db87)
   #### step 4.7 : enter `PC Serial number`
   ![image](https://github.com/user-attachments/assets/c389f019-d9af-4546-8190-62525cd8292b)
