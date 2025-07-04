@@ -1,8 +1,8 @@
 # method 1 
 - step 1 : 選取整段實驗的資料  
-  ![image](https://github.com/user-attachments/assets/4585189a-536a-4abc-98f1-158bff3d76e5)
+  ![image](https://github.com/user-attachments/assets/55107308-e630-4304-9ed5-94ec37960642)
 - step 2 : 選取存放所有實驗的logging file的資料夾  
-  ![image](https://github.com/user-attachments/assets/df824183-0122-4920-81bf-74b5910b4739)
+  ![image](https://github.com/user-attachments/assets/d5d3db54-7988-49b8-ad6d-7e2616906dbd)
   
 > [!Note]  
 > 開始讀檔案，以我自己這邊的電腦讀整段的檔案大概需要2~3分鐘
