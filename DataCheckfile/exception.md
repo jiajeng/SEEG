@@ -1,20 +1,4 @@
-# method 1 
-- step 1 : 選取整段實驗的資料  
-  ![image](https://github.com/user-attachments/assets/55107308-e630-4304-9ed5-94ec37960642)
-- step 2 : 選取存放所有實驗的logging file的資料夾  
-  ![image](https://github.com/user-attachments/assets/d5d3db54-7988-49b8-ad6d-7e2616906dbd)
-  
-> [!Note]  
-> 開始讀檔案，以我自己這邊的電腦讀整段的檔案大概需要2~3分鐘
-
-- output : 創建所有session的資料夾，會step1的資料夾內找mapping 1hz跟50hz的資料，有就移到各自的資料夾。
- ![image](https://github.com/user-attachments/assets/737b6ea5-8d1f-462d-a8a5-4f442871c6fd)
-
-
-
-
-      
-## trouble shooting
+# method 1   
 - 如果抓出來的每段資料跟logging file的個數不一樣會出現這樣的訊息  
   ![image](https://github.com/user-attachments/assets/59932d7c-745e-4fd3-b586-a88a1ab9145e)
   
