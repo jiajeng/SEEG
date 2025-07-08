@@ -9,6 +9,7 @@ function [errorlog,outlog,edfheader] = edf2set(edffile,varargin)
     %                Pdataf, "string", Prep data folder name, e.g. 'prepData'
     %                                code will find edf file path that
     %                                contains "rawData" replace to "prepData"
+    edfheader = [];
     errorlog = [];
     varnm = varargin(1:2:end);
     varvl = varargin(2:2:end);
@@ -105,5 +106,5 @@ function [errorlog,outlog,edfheader] = edf2set(edffile,varargin)
         log(end).error = sprintf('not find %s folder in %s',sess,sub);
         log(end).timestamp = string(datetime);
     end
-    save("log.mat","log")
+    % save("log.mat","log")
 end

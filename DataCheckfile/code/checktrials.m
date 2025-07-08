@@ -56,6 +56,12 @@ function [Allres, figData] = checktrials(inputfile, sess, edfhdr, varargin)
         filename = split(file(nfile).name,'.');
         filename = filename{1};
         EEG = pop_loadset(file(nfile).name,file(nfile).folder);
+        % check event name exist
+        while ~any(string({EEG.chanlocs.labels})==evtName)
+            evtName = input(sprintf('\nno event %s, check name and enter event name again : ',evtName),'s');
+        end
+        sprintf('\nevent channel is %s\n',evtName);
+
         loggingfile = dir(fullfile(file(nfile).folder,'..','logging','*.txt'));
         loggingfile = fullfile(loggingfile(nfile).folder,loggingfile(nfile).name);
 
@@ -302,12 +308,25 @@ function [Allres, figData] = checktrials(inputfile, sess, edfhdr, varargin)
             writetable(result,fullfile(outpath,['Checkfile',sess,'.xlsx']),"Sheet",[filename,'_',char(evtName)]);
         end
         Prop = result.Properties.VariableNames;
+        switch sess
+            case "eeg_EOR"
+                result.("DurTrig") = cellfun(@num2str,num2cell(str2double(result.("EndTime(s)"))-str2double(result.("StartTime(s)"))),'UniformOutput',false);
+            case "eeg_ECR"
+                result.("DurTrig") = cellfun(@num2str,num2cell(str2double(result.("EndTime(s)"))-str2double(result.("StartTime(s)"))),'UniformOutput',false);
+            case "eeg_music"
+                result.("DurTrig") = cellfun(@num2str,result.("DurTrig(s)"),'UniformOutput',false);
+                result.("edatTrig") = cellfun(@num2str,num2cell(cell2mat(result.("edatTrig(ms)"))/1000),'UniformOutput',false);
+               
+        end
         for j = 1:length(Prop)
             CName = [sess,'_file',num2str(nfile)];
             d = result.(Prop{j});
-            if Prop{j}=="TrigDur(s)" || Prop{j}=="edatTriDur(ms)"
-                continue;
+
+            if Prop{j}=="DurTrig(s)" || Prop{j}=="edatTrig(ms)"
+               continue;
             end
+            
+ 
             if class(d) == "cell"
                 d = d(~cellfun(@isempty,d));
                 if length(d) > 1 || isempty(d), continue; end
@@ -323,7 +342,7 @@ function [Allres, figData] = checktrials(inputfile, sess, edfhdr, varargin)
         end
         % ============================================================
         % save EEG file
-        pop_saveset(EEG,'filepath',file(nfile).folder,'filename',[file(nfile).name])
+        pop_saveset(EEG,'filepath',file(nfile).folder,'filename',[file(nfile).name]);
 
         % % save .edf file
         % hdr = edfheader("EDF+");
@@ -368,10 +387,10 @@ function [Allres, figData] = checktrials(inputfile, sess, edfhdr, varargin)
 end
 
 function [VarName,result] = getTrialsinfo(Trial_Dur, result, VarName)
-    result.TrigDur = num2cell(Trial_Dur');
-    VarName = cat(2,VarName,{'TrigDur(s)'});
-    result.TrigDur_L = {num2str(length(Trial_Dur'))};
-    VarName = cat(2,VarName,{'TrigDur(num)'});
+    result.DurTrig = num2cell(Trial_Dur');
+    VarName = cat(2,VarName,{'DurTrig(s)'});
+    result.DurTrig_L = {num2str(length(Trial_Dur'))};
+    VarName = cat(2,VarName,{'DurTrig'});
 end
 
 
@@ -392,7 +411,7 @@ function [VarName,result] = getTrialsinfo_EDat(loggingfile,result,VarName,ProcNa
         res(idx) = {2500};
     end
     result.edatTrialDur = reshape(res',[],1);
-    VarName = cat(2,VarName,{'edatTriDur(ms)'});
+    VarName = cat(2,VarName,{'edatTrig(ms)'});
     result.edatTrialDur_L = {num2str(length(reshape(res',[],1)))};
-    VarName = cat(2,VarName,{'edatTriDur(num)'});
+    VarName = cat(2,VarName,{'edatTrig'});
 end
