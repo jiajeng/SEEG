@@ -11,7 +11,7 @@ import pyautogui
 import os
 import win32gui
 import win32con
-
+import datetime
 
 def select_window(window_title):
     """
@@ -44,9 +44,14 @@ def get_all_window_titles():
     win32gui.EnumWindows(enum_callback, None)
     return titles
 
-pywins = get_all_window_titles()
-pywins = pywins[0]
-cascades = "Cascade Surgical Studio";
+
+
+wins = get_all_window_titles()
+for i in wins:
+    if 'Cascade' in i:
+        cascades = i
+    if 'Anaconda Prompt' in i:
+        pywins = i
 
 # check pos file exist
 posfile = os.listdir('.')
@@ -63,7 +68,7 @@ if 'stimButtom_pos.txt' in posfile:
     
 
 if nofile: 
-    print('move mouse to the stimulus button position then press enter(using alt+tab to change window)')
+    print('move cursor to the stimulus buttom then press enter')
     input('press enter to continue ...')
     print('3 ...')
     time.sleep(1)
@@ -114,24 +119,20 @@ try:
         data = conn.recv(1024)  # Buffer size
         data = data.decode('utf-8')
         if data:
-            t.append(time.time())
-            print(f"{time.time()}")
-            print(f"Received: {data}")
-            
-            # Send a response back
-            #conn.sendall(b"Data received")
-            if data == "in":
+            if data == '\x09':
                 pyautogui.click(x,y)
-            if data == "exit":         
+            if data == '\x08':
                 break
     # Close the connection
     conn.close()
     select_window(pywins)
     print("Connection closed")
+    time.sleep(1)
     os._exit(00)
 finally:
     conn.close()  
     print("Connection closed")
+    time.sleep(1)
     os._exit(00)
 
 
