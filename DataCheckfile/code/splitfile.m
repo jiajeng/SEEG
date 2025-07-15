@@ -256,10 +256,6 @@ function [edfhdr,sess,wrnmsg,evtChName] = splitfile(file,evtChName,subpath,logfo
                     copyfile(fullfile(logfile(idx).folder,logfile(idx).name),fullfile(logpath,logfile(idx).name));
                 end
             end
-            
-            saveas(gcf,fullfile(dir(file).folder,'all_dum_label.fig'))
-            close all;
-            sess = unique(sess);
         else
             % according sessorder get logging file if no file disp warning 
             eorecrnum = 0;
@@ -317,6 +313,10 @@ function [edfhdr,sess,wrnmsg,evtChName] = splitfile(file,evtChName,subpath,logfo
                 end
             end
         end
+
+        saveas(gcf,fullfile(dir(file).folder,'all_dum_label.fig'))
+        close all;
+        sess = unique(sess);
 
         % try to copy 1hz and 50hz file to specific folder
         % expect file in edf folder
