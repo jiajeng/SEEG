@@ -344,6 +344,11 @@ function [Allres, figData] = checktrials(inputfile, sess, edfhdr, varargin)
         % save EEG file
         pop_saveset(EEG,'filepath',file(nfile).folder,'filename',[file(nfile).name]);
 
+        % save .gdf file 
+        gdfoutputpath = fullfile(file(nfile).folder,'..','edf');
+        if ~exist(gdfoutputpath,'dir'), mkdir(gdfoutputpath); end
+        pop_writeeeg(EEG,fullfile(gdfoutputpath,strrep(file(nfile).name,'.set','.edf')),'TYPE','EDF');
+
         % % save .edf file
         % hdr = edfheader("EDF+");
         % 
